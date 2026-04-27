@@ -10820,7 +10820,7 @@ data-i18n-placeholder="tool-effect" placeholder="Tool effects."></textarea>
 </rolltemplate>
 
 
-<script type="text/worker">
+`ipt type="text/worker">
 
 //-------------------------------------------------------------------------------------
 // orcsAsync
@@ -14992,7 +14992,7 @@ function damageHelper(overrideList={}, defenceRoll=0) {
 
 	/* Get resistance values based on outfit type. On stagger, resistances are fatal (2x) */
 	if (staggerState == "Staggered") {
-		hpResistance = 2.0; stResistance = 2.0;
+		hpResistance = 1.5; stResistance = 1.5;
 	} else {
 		switch (damageType) {
 			case "Slash": hpResistance = parseFloat(values[`${outfitType}Immune1`]); stResistance = parseFloat(values[`${outfitType}Immune2`]); break;
